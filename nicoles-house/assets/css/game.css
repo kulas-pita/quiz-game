@@ -1,0 +1,86 @@
+/* QUESTIONS */
+
+.choice-container {
+  display: flex;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  font-size: 1.8rem;
+  border: 0.1rem solid #bdbdbd; /* Light grey */
+  background-color: #fff;
+  border-radius: 0.5rem;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.choice-container:hover {
+  cursor: pointer;
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+  transform: translateY(-0.1rem);
+}
+
+.choice-prefix {
+  padding: 1.5rem 2.5rem;
+  background-color: #3f51b5; /* Royal blue */
+  color: white;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.choice-text {
+  padding: 1.5rem;
+  width: 100%;
+}
+
+.correct .choice-text {
+  background-color: #4caf50; /* Green */
+  color: white;
+}
+
+.incorrect .choice-text {
+  background-color: #f44336; /* Red */
+  color: white;
+}
+
+/* HUD */
+
+#hud {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.hud-item {
+  text-align: center;
+}
+
+.hud-prefix {
+  font-size: 2rem;
+  color: #3f51b5; /* Royal blue */
+}
+
+.hud-main-text {
+  font-size: 3rem;
+  color: #333; /* Dark grey */
+}
+
+#progressBar {
+  width: 20rem;
+  height: 2rem;
+  border: 0.2rem solid #3f51b5; /* Royal blue */
+  border-radius: 1rem;
+}
+
+#progressBarFull {
+  height: 100%;
+  background-color: #3f51b5; /* Royal blue */
+  width: 0%;
+}
+
+.score-prefix {
+  font-size: 2rem;
+  color: #3f51b5; /* Royal blue */
+}
+
+#score {
+  font-size: 3rem;
+  color: #333; /* Dark grey */
+}
